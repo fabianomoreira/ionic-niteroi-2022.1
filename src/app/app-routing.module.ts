@@ -26,6 +26,14 @@ const routes: Routes = [
   {
     path: 'alerta',
     loadChildren: () => import('./pages/alerta/alerta.module').then( m => m.AlertaPageModule)
+  },
+  {
+    path: 'acao',
+    loadChildren: () => import('./pages/acao/acao.module').then( m => m.AcaoPageModule)
+  },
+  {
+    path: 'badge',
+    loadChildren: () => import('./pages/badge/badge.module').then( m => m.BadgePageModule)
   }
 ];
 

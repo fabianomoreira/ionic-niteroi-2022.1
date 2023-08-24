@@ -9,7 +9,9 @@ export class AppComponent {
   public appPages = [
     { title: 'Botão', url: 'botao', icon: 'browsers' },
     { title: 'Navegação', url: 'navegacao', icon: 'boat'},
-    { title: 'Alerta', url: 'alerta', icon: 'chatbox'}
+    { title: 'Alerta', url: 'alerta', icon: 'chatbox'},
+    { title: 'Menu de Contexto', url: 'acao', icon: 'share'},
+    { title: 'Badge', url: 'badge', icon: 'notifications'}
   ];
 
   constructor(private nav: NavController) {}
