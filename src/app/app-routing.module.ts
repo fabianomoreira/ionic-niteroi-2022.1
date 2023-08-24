@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'proxima',
     loadChildren: () => import('./pages/proxima/proxima.module').then( m => m.ProximaPageModule)
+  },
+  {
+    path: 'alerta',
+    loadChildren: () => import('./pages/alerta/alerta.module').then( m => m.AlertaPageModule)
   }
 ];
 
