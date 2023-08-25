@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./badge.page.scss'],
 })
 export class BadgePage implements OnInit {
-
+  valor: number = 47;
+  
   constructor() { }
 
   ngOnInit() {
