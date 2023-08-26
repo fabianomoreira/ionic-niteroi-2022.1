@@ -13,7 +13,10 @@ export class AppComponent {
     { title: 'Menu de Contexto', url: 'acao', icon: 'share'},
     { title: 'Badge', url: 'badge', icon: 'notifications'},
     { title: 'Cards', url: 'card', icon: 'images'},
-    { title: 'Checkbox', url: 'check', icon: 'checkbox'}
+    { title: 'Checkbox', url: 'check', icon: 'checkbox'},
+    { title: 'Interação', url: 'conteudo', icon: 'videocam'},
+    { title: 'Chip', url: 'chip', icon: 'id-card'},
+    { title: 'Data', url: 'data', icon: 'calendar-number'}
   ];
 
   constructor(private nav: NavController) {}

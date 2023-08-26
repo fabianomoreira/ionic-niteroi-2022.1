@@ -37,7 +37,7 @@ export class AlertaPage implements OnInit {
   async emitirAlerta3(){
     const alert = await this.alertControl.create({
       header: "Confirme",
-      message: "Este é um alerta com <strong>funções</strong>",
+      message: "Este é um alerta com funções",
       buttons: [
                 {
                   text: 'ok',

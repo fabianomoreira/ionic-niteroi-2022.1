@@ -42,6 +42,18 @@ const routes: Routes = [
   {
     path: 'check',
     loadChildren: () => import('./pages/check/check.module').then( m => m.CheckPageModule)
+  },
+  {
+    path: 'conteudo',
+    loadChildren: () => import('./pages/conteudo/conteudo.module').then( m => m.ConteudoPageModule)
+  },
+  {
+    path: 'chip',
+    loadChildren: () => import('./pages/chip/chip.module').then( m => m.ChipPageModule)
+  },
+  {
+    path: 'data',
+    loadChildren: () => import('./pages/data/data.module').then( m => m.DataPageModule)
   }
 ];
 

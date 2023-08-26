@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Data</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Data Default</ion-label>
+    <ion-datetime></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Presentation</ion-label>
+    <ion-datetime presentation="month-year"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Time</ion-label>
+    <ion-datetime presentation="time"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Min/Max</ion-label>
+    <ion-datetime display-format="MMMM YYYY" min="2015" max="2023"></ion-datetime>
+  </ion-item>
+</ion-content>

@@ -9,22 +9,26 @@
 
 <ion-content>
   <ion-item>
-    <ion-label>Default</ion-label>
-    <ion-checkbox></ion-checkbox>
+    <ion-checkbox>Default</ion-checkbox>
   </ion-item>
 
   <ion-item>
-    <ion-label>Disabled</ion-label>
-    <ion-checkbox disabled="true"></ion-checkbox>
+    <ion-checkbox disabled="true">Disabled</ion-checkbox>
   </ion-item>
 
   <ion-item>
-    <ion-label>Checked</ion-label>
-    <ion-checkbox checked="true"></ion-checkbox>
+    <ion-checkbox checked="true">Checked</ion-checkbox>
   </ion-item>
 
   <ion-item>
-    <ion-label>Checked + Disabled</ion-label>
-    <ion-checkbox disabled="true" checked="true"></ion-checkbox>
+    <ion-checkbox disabled="true" checked="true">Checked + Disabled</ion-checkbox>
   </ion-item>  
+
+  <ion-item>
+    <ion-label class="ion-text-center">Meses (Dinâmicos)</ion-label>
+  </ion-item>
+
+  <ion-item *ngFor="let mes of meses">
+    <ion-checkbox checked="{{mes.status}}" color="danger">{{mes.descricao}}</ion-checkbox>
+  </ion-item>
 </ion-content>
